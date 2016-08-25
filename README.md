@@ -3,4 +3,4 @@ This is a Github page for my site, which is deployed through namecheap at <a hre
 
 Image Sources
 --------------
-UC Berkeley Picture: pbs.org
+UC Berkeley Picture: http://pbs.org
