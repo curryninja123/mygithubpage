@@ -1,0 +1,45 @@
+<br><br>
+      <div class = "pure-g" style="height:1000px" id = "content">
+        <div class = "pure-u-1-2" id = "leftsidebar" align = "center">
+          <br><br><br>
+          <button class = "btn btn-primary edleftside">Ellis Elementary</button>
+          <div class = "eddrop">
+            <p class="body">
+              Ellis Elementary School in Sunnyvale, CA was my first step into the world of public schools. Although I only spent my Kindergarten and first grade years here, I naturally had a lot of fun as a young kid with no worries about assignments. My short stay here was ended when I moved to Fremont, CA in the summer of 2005.
+            </p>
+          </div>
+          <br><br>
+          <button class = "btn btn-primary edleftside">Parkmont Elementary </button>
+          <div class="eddrop">
+            <p class="body">
+              Parkmont Elementary was the school where I finished my primary education (which, in California, went up till 6th grade)s. It was where both my talents and character really began to blossom. When I moved to the city of Fremont, I had almost no friends and was completely lost, so I spent most of my time in the library reading books about topics ranging from dinosaurs to mathematics. I even began playing sports such as swimming, basketball, and tennis At this point in my life, I was really interested in zoology, and I garnered a reputation for my abilities amongst my schoolmates.
+            </p>
+            <p class="body">
+              It was in Parkmont that I won my first ever competitions: the Bay Area Kumon Mathematics Challenge (2007), the Parkmont Checkers Tournament (2009), the Parkmont Spelling Bee (2010), and the Southwest Region Thinking Cap Quiz Bowl (2010). I had not done many competitions before these, and it was quite a welcoming experience to participate amongst so many talented individuals.
+            </p>
+            <p class="body">
+              Sometime during the latter part of my elementary career I became obssessed with videogames such as Pokemon. Exposure to this new world of entertainment distracted me heavily from my education and my grades suffered like never before. As a result of this, I lost the honor status that I had maintained for so many years before. However, as I bid farewell to Parkmont, I promised to never let such an event occur again
+            </p>
+          </div>
+          <br><br>
+          <button class = "btn btn-primary edleftside">Centerville Junior High</button>
+          <div class = "eddrop">
+            <p class="body">
+              With the failures of the past behind me, I joined Centerville Junior High as a new person. Once again, I started taking all honors classes and even skipped a year in mathematics, taking Algebra I as a 7th grader. While I had quite a few friends by this time, I still spent most of my time in the library. It was through this time in the library that I became thoroughly infatuated with robotics and artificial intelligence, primarily through the works of Asimov. I simply couldn't stop reading about the subject, and, before I knew it, I knew exactly what field I wanted to go into as an adult.
+            </p>
+            <p class="body">
+              Another (rather unusual) side of my character grew during this point in my life. I was becoming an activist. I wished to prevent the sales of products containing Monosodium Glutamate (MSG), a known carcinogen, within the school cafeteria. Since many popular snacks such as Cheetos and Doritos contained MSG, I faced a lot of opposition. However, eventually, I was able to get a petition signed to ban all such products, and the school complied. As a result, I was featured in the school newspaper for my efforts. In retrospect, I realize that perhaps an awareness and constraint campaign, instead of an outright ban movement would have been better for the school.
+            </p>
+            <p class="body">
+
+            </p>
+          </div>
+          <br><br>
+          <button class = "btn btn-primary edleftside">First Colony Middle</button>
+          <br><br>
+          <button class = "btn btn-primary edleftside">Dulles High</button>
+          <br><br>
+          <button class = "btn btn-primary edleftside">UC Berkeley</button>
+        </div>
+        <div class = "pure-u-1-2" class="edrightside" id = "rightsidebar">
+          <h2 class = "page-header" id = "pichead">Pictures go here</h2>
