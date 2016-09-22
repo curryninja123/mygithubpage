@@ -16,14 +16,63 @@ p.namebar
   	transform: translateY(10%);
 }
 
+nav.main {
+    background-color: #242424;
+    opacity: 0.7;
+}
+
 div.page-nav
 {
 	vertical-align: middle;
-	height: 50px;
-	background-color: #084887;
 	font-family: sans-serif;
 	font-size: 22px;
+    color:#fff;
+    padding: 5px;
 }
+
+div.tab {
+    color:#fcfcfc;
+    font-weight: bold;
+    font-size: 28px;
+    height: auto;
+    line-height: 60px;
+}
+
+button.tab {
+    border: none;
+    display: block;
+    height: 60px;
+    width: 100%;
+}
+
+.gray {
+    background-color: #242424;
+}
+
+.red {
+    background-color: #F24633;
+}
+
+.orange {
+    background-color: #F9791E;
+}
+
+.yellow {
+    background-color: #FFB300;
+}
+
+.green {
+    background-color: #00B16A;
+}
+
+.blue {
+    background-color: #1297F0;
+}
+
+.violet {
+    background-color: #9F55FC;
+}
+
 .vcenter
 {
   position: relative;
