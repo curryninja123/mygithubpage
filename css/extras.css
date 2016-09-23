@@ -74,6 +74,7 @@ p.body
 	font-family: sans-serif;
 	text-indent: 10px;
     line-height: 1.5em;
+    padding: 7px;
 }
 
 .head1 {

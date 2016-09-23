@@ -10,6 +10,7 @@
   </head>
   <body class  ="gray">
     <div class = "container-fluid" style = "height:auto">
+        <div id="main"></div>
         <!-- NAVBAR BEGINS HERE -->
         <div class = "pure-g">
             <div class="pure-u-1-24"></div>
@@ -21,7 +22,7 @@
                         <div class="pure-u-11-12">
                             <div class = "pure-g page-nav">
                                 <div id = "mainbut"  class = "pure-u-1-6 red tab" align = "center"><button class = "tab red">Vishnu Iyer :</button></div>
-                                <div class = "pure-u-1-6 orange tab" id = "aboutbut" align = "center"><button  class = "tab orange">About</button></div>
+                                <div class = "pure-u-1-6 orange tab" id = "aboutbut" align = "center"><button  class = "tab orange" href="#about">About</button></div>
                                 <div class = "pure-u-1-6 yellow tab" id = "educationbut" align = "center"><button class = "tab yellow">Education</button></div>
                                 <div class = "pure-u-1-6 green tab" id = "skillbut" align = "center"><button  class = "tab green">Skills</button></div>
                                 <div class = "pure-u-1-6 blue tab" id = "honorbut" align = "center"><button class = "tab blue">Honors</button></div>
@@ -98,8 +99,9 @@
                         </table>
                     </div>
                 </div>
-                <br><br><br>
-                <div class="pure-g">
+                <div id = "about"></div>
+                <br><br><br><br>
+                <div class="pure-g" >
                     <div class="pure-u-1-8">
                     </div>
                     <div class="pure-u-3-4">
@@ -107,7 +109,8 @@
                         <div class="hlineorange"></div>
                     </div>
                 </div>
-                <br><br><br>
+                <div id="education"></div>
+                <br><br><br><br>
                 <div class="pure-g">
                     <div class="pure-u-1-8"></div>
                     <div class="pure-u-3-4">
@@ -115,7 +118,8 @@
                         <div class="hlineyellow"></div>
                     </div>
                 </div>
-                <br><br><br>
+                <div id="skills"></div>
+                <br><br><br><br>
                 <div class="pure-g">
                     <div class="pure-u-1-8"></div>
                     <div class="pure-u-3-4">
@@ -123,8 +127,8 @@
                         <div class="hlinegreen"></div>
                     </div>
                 </div>
-                <br><br><br>
-                
+                <div id="honors"></div>
+                <br><br><br><br>
                 <div class="pure-g">
                     <div class="pure-u-1-8"></div>
                     <div class="pure-u-3-4">
@@ -140,67 +144,125 @@
                         <div class="pure-g" align="center" style = "padding:5px;">
                             <div class="pure-u-11-24">
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class="head4">National Science Bowl 2015</h4>
-                                    <div>
+                                    <h4 class="head4" onclick="eduScroll('nsb')">National Science Bowl 2015</h4>
+                                    <div style = "display:none" id = "nsb">
                                         <img src="images/nsb.jpg" class = "img-rounded" alt = "National Sciene Bowl" width = "90%">
                                         <br><br>
                                         <p class="body">
-                                            In February 2015, my team and I won the Texas A&M Regional Science Bowl. We then proceeded to represent our region at the National Competition in Washington, DC in May. At this competition, we received 7th among about 60 participating schools.
+                                            Science Bowl is a competition in which a team of 5 students buzzes in to solve problems in Math, Physics, Biology, Chemistry, Earth Science, Astronomy, and Energy as quickly as possible. In February 2015, my team and I won the Texas A&M Regional Science Bowl. We then proceeded to represent our region at the National Competition in Washington, DC in May. At this competition, we received 7th among about 60 participating schools.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">National Physics Bowl</h4>
-                                    <div>
+                                    <h4 class= "head4" onclick="eduScroll('npb')">National Physics Bowl</h4>
+                                    <div id = "npb" style="display:none">
+                                        <img src="images/physics.png" class = "img-rounded" alt = "Physics Bowl" width="90%">
+                                        <br><br>
+                                        <p class="body">
+                                            Physics Bowl is a written competition in which students race against time to solve 40 difficult problems in topics including mechanics, electrodynamics, modern physics, and more. In 2015, I was the lead scorer on my team, which placed 3rd nationally. I was also the highest scoring individual in the state. The next year, I was tied for the second highest in both my state and my school, which tied for 1st nationally.
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">TMSCA State</h4>
+                                    <h4 class= "head4" onclick="eduScroll('tmsca')">TMSCA State</h4>
+                                    <div id = "tmsca" style="display:none">
+                                        <img src="images/tmsca.jpg" alt = "TMSCA State" class = "img-rounded" width = "90%">
+                                        <br>
+                                        <p class="body">
+                                            For the past four years, I have represented my team at the state level for the Texas Math and Science Coaches Association, a competition which tests proficiency in Number Sense, Calculator Applications, General Mathematics, and General Science. In recent years, I  led scoring in the areas of Number Sense, Calculator, and General Science. Every one of these years, we received 1st place overall by a noticeable margin.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">AP Scholarship</h4>
+                                    <h4 class= "head4" onclick="eduScroll('ibm')">IBM Watson Scholarship</h4>
+                                    <div id = "ibm" style="display:none">
+                                        <img src="images/ibm.svg" alt="IBM" class = "img-rounded" width = "90%">
+                                        <br><br>
+                                        <p class="body">
+                                            In April of 2016, I received the Thomas J. Watson Memorial Scholarship from IBM®. I had to go through a rigorous application process in which I enclosed grades, honors, and essays. Along with the financial award, I received a certificate and a letter from IBM.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">IBM Watson Scholarship</h4>
+                                    <h4 class= "head4" onclick="eduScroll('uh')">University of Houston Mathematics</h4>
+                                    <div id = "uh" style="display:none">
+                                        <img src="images/uh.png" width="90%" class="img-rounded" alt="UH">
+                                        <br>
+                                        <p class="body">
+                                            Each January, the University of Houston runs a mathematics competition in which they run tests focused on Algebra, Geometry, Precalculus, Calculus, Physics, Calculator Applications, and Statistics. In 2015 and 2016 I placed 5th and 2nd, respectively, in Calculus out of approximately 150 students.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="pure-u-1-12"></div>
                             <div class="pure-u-11-24">
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">Academic World Quest</h4>
-                                    <div>
+                                    <h4 class= "head4" onclick="eduScroll('awq')">Academic World Quest</h4>
+                                    <div id = "awq" style="display:none">
                                         <img src="images/awq.jpg" alt = "Academic World Quest" class="img-rounded" width = 90%>
                                         <br><br>
                                         <p class="body">
-                                            Here is some text about AWQ
+                                            In February 2014, 2015, and 2016, my team won the Regional Academic World Quest competition, a team quiz about current affairs and geography. In 2014 and 2015 I accompanied my team to the national level, where we received 7th and 4th, respectively.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">University Interscholastic League</h4>
-                                    <div>
+                                    <h4 class= "head4" onclick="eduScroll('uil')">University Interscholastic League</h4>
+                                    <div id = "uil" style="display:none">
                                         <img src="images/uil.jpg" alt = "UIL" class="img-rounded" width = 90%>
                                         <br><br>
                                         <p class="body">
-                                            Here is some text about UIL.
+                                            In May 2015, I represented my school in the field of Science in UIL, a state level academics competition. Our science team placed first by a sizeable margin and we won the overall academics prize. The following year, I was on the Science and Number Sense teams, which won 1st and 2nd place, respectively. We also won 2nd place in overall academics that year.
                                         </p>
                                     </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">Houston CodeDay</h4>
+                                    <h4 class= "head4" onclick="eduScroll('hcd')">Houston CodeDay</h4>
+                                    <div id = "hcd" style="display:none">
+                                        <img src="images/codeday_logo.png" alt = "Code Day" class="img-rounded" width="90%">
+                                        <br>
+                                        <p class="body">
+                                            Houston CodeDay is a hackathon for high school and college students. I attended with a team of 3 others and we won the prize for top web application. We programmed a website called <a href="http://principia.herokuapp.com/">Principia</a> in Node.js and Bootstrap. It is essentially a database for teaching mathematical formulas.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">National Merit Scholarship</h4>
+                                    <h4 class= "head4" onclick="eduScroll('nmf')">National Merit Finalist</h4>
+                                    <div id = "nmf" style="display:none">
+                                        <img src="images/nms.jpg" class="img-rounded" width="90%" alt="National Merit">
+                                        <br>
+                                        <p class = "body">
+                                            In 2015, I took the National Merit Scholarship Qualification test and received a score that was high enough to enter me into the competition for the scholarship. I applied for said scholarship and was selected as one of the National finalists.
+                                        </p>
+                                    </div>
                                 </div>
                                 <div class="thumbnail gray bluebord">
-                                    <h4 class= "head4">Instructables Robotics</h4>
+                                    <h4 class= "head4" onclick="eduScroll('inst')">Instructables Robotics</h4>
+                                    <div id = "inst" style="display:none">
+                                        <img src="images/aaa.jpg" class = "img-rounded" alt="Instructables" width="90%">
+                                        <br>
+                                        <p class="body">
+                                            In 2013, Instructables offered a contest in which participants had to make an electronic project that was easy to explain to beginners and was very useful at the same time. I created a <a href="http://www.instructables.com/id/AAA-Robot-Autonomous-Analog-Arduino/">robot</a> that would test various analog sensors and move to a local minimum in the room. This entry earned me fifth place in the competition and a Nexus 7.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="thumbnail gray bluebord">
+                                    <h4 class= "head4" onclick="eduScroll('ap')">AP Scholarship</h4>
+                                    <div id = "ap" style="display:none">
+                                        <img src="images/ap.png" class="img-rounded" alt="Advanced Placement" width="90%">
+                                        <br>
+                                        <p class="body">
+                                            For two years in a row (2015, 2016) I have been selected as a National AP Scholar with Distinguisment. Overall, I have taken 15 AP exams with an average score of about 4.8.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-                
-                <br><br><br>
+                <div id="projects"></div>
+                <br><br><br><br>
                 <div class="pure-g">
                     <div class="pure-u-1-8"></div>
                     <div class="pure-u-3-4">
@@ -212,6 +274,7 @@
             </div>
             <div class = "pure-u-1-24"></div>
         </div>
+        <div style="height:1000px"></div>
     </div>  
   </body>
 </html>
