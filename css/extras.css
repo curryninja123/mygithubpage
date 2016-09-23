@@ -1,24 +1,8 @@
-p.page-heading
-{
-  color: #0d00a4;
-  font-size: 48px;
-  font-family: sans-serif;
-}
-
-p.namebar
-{
-	margin: auto;
-	width:50%;
-	color: #ffb300;
-	font-style: bold;
-	position: relative;
-  	top: 50%;
-  	transform: translateY(10%);
-}
+/* For the navbar*/
 
 nav.main {
     background-color: #242424;
-    opacity: 0.7;
+    opacity: 1.0;
 }
 
 div.page-nav
@@ -36,6 +20,7 @@ div.tab {
     font-size: 28px;
     height: auto;
     line-height: 60px;
+    opacity: 0.8;
 }
 
 button.tab {
@@ -44,6 +29,12 @@ button.tab {
     height: 60px;
     width: 100%;
 }
+
+div.thumb {
+    background-color: #242424;
+}
+
+/* Different colors */
 
 .gray {
     background-color: #242424;
@@ -73,6 +64,84 @@ button.tab {
     background-color: #9F55FC;
 }
 
+/* Text modifiers */
+
+p.body
+{
+    color: #e5e5e5;
+	font-size: 18px;
+    text-align: justify;
+	font-family: sans-serif;
+	text-indent: 10px;
+    line-height: 1.5em;
+}
+
+.head1 {
+    color: #e5e5e5;
+    font-size: 72px;
+}
+
+.head2 {
+    color: #e5e5e5;
+    font-size: 50px;
+}
+
+.head3 {
+    color: #e5e5e5;
+    font-size: 36px;
+    text-align: center;
+}
+
+.head4 {
+    color: #e5e5e5;
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Borders */
+.redbord {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F24633;
+}
+
+.orangebord {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #F9791E;
+}
+
+.yellowbord {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #FFB300;
+}
+
+.greenbord {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #00B16A;
+}
+
+.bluebord {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #1297F0;
+}
+
+.violetbord {
+    border-style: solid;
+    border-width: 3px;
+    border-color: #9F55FC;
+}
+/* Miscellaneous */
+.center13 {
+    align-content: center;
+    vertical-align: middle;
+    margin-left: 16%;
+    margin-right: auto;
+}
+
 .vcenter
 {
   position: relative;
@@ -80,59 +149,68 @@ button.tab {
   transform: translateY(-50%);
 }
 
-.vcenter2
-{
-  position: relative;
-  top: 90%;
-  transform: translateY(15%);
+div.vspace {
+    border-style: solid;
+    border-width: 7px;
+    height: auto;
+    border-color: #242424;
 }
 
-button.navbutton
-{
-	background-color: #084887;
-	vertical-align: middle;
-	text-align: center;
-	color: #ffb300;
-	position: relative;
-  	top: 50%;
-  	transform: translateY(0%);
-  	margin: auto;
-	width:90%;
-	font-size: 22px;
+div.vlinered {
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F24633;
 }
 
-button.edleftside
-{
-	background-color: #084887;
-	font-family: sans-serif;
-	font-size: 20px;
-	font-weight: 3px;
-	width:700px;
-	position: relative;
-  	top: 50%;
-  	color: #ffb300;
-  	transform: translateY(-50%);
+div.hlinered {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F24633;
 }
 
-div.edrightside
-{
-	padding: 15px;
+div.hlineorange {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #F9791E;
 }
 
-div.eddrop
-{
-	/*display: none;*/
-	border-color: #084887;
-	border-width: 5px;
-	border-style: solid;
-	width:700px;
-	padding: 5px;
-	text-align: justify;
+div.hlineyellow {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #FFB300;
 }
 
-p.body
-{
+div.hlinegreen {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00B16A;
+}
+
+div.hlineblue {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1297F0;
+}
+
+div.hlineviolet {
+    position: relative;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #9F55FC;
+}
+
+.normal {
+    color: #e5e5e5;
 	font-size: 18px;
+    text-align: justify;
 	font-family: sans-serif;
 	text-indent: 10px;
 }
