@@ -1,0 +1,105 @@
+$primary: #235ae0;
+$accent: #FF9500;
+$page-background: #fff;
+
+div.name-block {
+    background-color: $accent;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20%;
+    vertical-align: middle;
+    height: 20%;
+    position: static;
+}
+
+div.main-navbar {
+    background-color: $page-background;
+    height: 100%;
+    position: static;   
+}
+
+body {
+    margin: 0;
+    font-family: 'Cabin';
+}
+
+a {
+    color: $accent;
+}
+
+a.bodylink {
+    text-align: justify;
+    font-family: 'Cabin';
+    font-size: 18;
+}
+
+div.front-loader {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    padding: 30px;
+}
+
+p.body {
+    text-align: justify;
+    font-family: 'Cabin';
+    font-size: 18;
+}
+
+div.imgbox {
+    margin: 0;
+}
+
+img.front {
+    border-radius: 50%;
+    width: 30%;
+}
+
+div.navblock {
+    padding-left: 50px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 32px;
+    color: $accent;
+    font-family: 'Cabin';
+    font-weight: bold;
+}
+
+
+li {
+    list-style-type: square;
+    display: list-item;
+    text-align: justify;
+    font-family: 'Cabin';
+    font-size: 18;
+}
+
+
+h2.page-head {
+    font-family: 'Cabin';
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    color: $primary;
+}
+
+h4.sub-head {
+    font-family: 'Cabin';
+    font-size: 25px;
+    font-weight: bold;
+    text-align: justify;
+    color: #000;
+}
+
+h2.name {
+    font-family: 'Cabin';
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    text-align: center;
+}

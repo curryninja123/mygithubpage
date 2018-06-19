@@ -20,6 +20,11 @@ body {
 a {
   color: #FF9500; }
 
+a.bodylink {
+  text-align: justify;
+  font-family: 'Cabin';
+  font-size: 18; }
+
 div.front-loader {
   display: block;
   margin-left: auto;
@@ -51,12 +56,26 @@ div.navblock {
   font-family: 'Cabin';
   font-weight: bold; }
 
+li {
+  list-style-type: square;
+  display: list-item;
+  text-align: justify;
+  font-family: 'Cabin';
+  font-size: 18; }
+
 h2.page-head {
   font-family: 'Cabin';
   font-size: 40px;
   font-weight: bolder;
   text-align: center;
   color: #235ae0; }
+
+h4.sub-head {
+  font-family: 'Cabin';
+  font-size: 25px;
+  font-weight: bold;
+  text-align: justify;
+  color: #000; }
 
 h2.name {
   font-family: 'Cabin';
