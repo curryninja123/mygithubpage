@@ -101,6 +101,96 @@
                     <li>The key observation in Berlekamp-Welch is that Q(i) = P(i)E(i) = r<sub>i</sub> E(i)in the case where there is an error (because both sides are 0) and in the case where there isn't an error (because the received message r<sub>i</sub> is the same as the sent message P(i)</li>
                 </ul>
                 <br>
+                <h4 class="sub-head">7/5 Section 3D - Countability</h4>
+                <ul>
+                    <li>If a set A "seems" smaller than another countable set B (for example, there is an injection from A to B) then A is also countable.</li>
+                    <li>Likewise, if a set A "seems" larger than another uncountable set B, then A is also uncountable.</li>
+                    <li>Diagonalization proofs all follow a similar argument. You assume countability for the sake of contradiction and suppose the existence of some special element x created by changing some aspects of other elements on the list with the idea that x will appear at the n-th position but the n-th position of x's representation will result in a contradiction.</li>
+                    <li>Cartesian Product of countable sets is countable.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/9 Section 4A - Computability</h4>
+                <ul>
+                    <li>Computability problems follow a similar form - reduce a problem <i>from</i> (not to) the halting problem or another uncomputable problem like TestHelloWorld to show that it is uncomputable.</li>
+                    <li>In reductions, use the program you are assuming does not exist as the black box, <b>not the other way around</b>.</li>
+                    <li>Computer programs are strings and are therefore countable. Functions are, in general, uncountable</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/10 Section 4B - Counting</h4>
+                <ul>
+                    <li>There are multiple ways to count things. As long as your intuition has been shown to be correct, do whatever you're most comfortable with!</li>
+                    <li>Bitstrings of length n can be thought of as analogous to subsets from a set of size n. We can derive the combinatorial symbol in this way. Furthermore, since there are two choices for each element to create a subset (either the element is in the subset or not), the number of total subsets is 2<sup>n</sup>.</li>
+                    <li>Stars and Bars is essentially an anagram problem using a letter for each object and divider.</li>
+                    <li>Keep a running list of how to count in different situations and always relate new problems to ones you've solved before.</li>
+                    <li>n choose k is the same as n choose n - k. Instead of choosing the n elements in a subset, we can exclude n - k and use the remaining k.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/11 Section 4C - Discrete Probability</h4>
+                <ul>
+                    <li>For uniform probability, you can count the number of successful events and divide it by the number of total events.</li>
+                    <li>Take care about counting number of arrangements in discrete probability. For the book problem in discussion, you have to treat the objects as distinct, because if you just count all the math books as the same, that disregards the fact that there are 120 ways to rearrange them. The safest bet is to think in terms of events.</li>
+                    <li>Inclusion-Exclusion makes sense when you think of drawing Venn Diagrams. See <a href="https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#/media/File:Inclusion-exclusion-3sets.png">this picture</a> for such an example.</li>
+                    <li>If an event A implies the occurence of an event B and vice versa, then both events are equal (think of events like sets and then consider set equality conditions in terms of subsets).</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/12 Section 4D - Conditional Probability</h4>
+                <ul>
+                    <li>The definitions of independence are all equal and can be derived using the definition of conditional probability.</li>
+                    <li>We can think of symmetry like this - if we <i>don't know</i> the result of the first trial and want to consider the second trial, it is effectively the same as performing both trials simultaneously and arbitrarily deeming one the first and the other the second.</li>
+                    <li>When calculating the probability breaks down into cases, the total probability rule is the way to go.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/16 Section 5A - Bayes' Rule</h4>
+                <ul>
+                    <li>Bayes' rule can also be derived using the definition of conditional probability.</li>
+                    <li>Bayes' rule is extremely useful for flipping conditionals.</li>
+                    <li>Mutual independence is stronger than pairwise independence (or k-wise independence for any k).</li>
+                    <li>(k+1)-wise independence is stronger than k-wise independence for any k.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/17 Section 5B - Important Distributions</h4>
+                <ul>
+                    <li>If given a number of independent of trials and probability of any individual trial succeeding, it is binomial.</li>
+                    <li>If counting the number of trials before a success, it is geometric.</li>
+                    <li>Be careful how you define "success" for a particular problem.</li>
+                    <li>If given a mean number of successes over a period of time, it is Poisson.</li>
+                    <li>The sum of Poissons is Poisson in an intuitive way - the parameters add.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/18 Section 5C - Expectation</h4>
+                <ul>
+                    <li>Expectation is essentially a weighted average.</li>
+                    <li>Indicator random variables are useful for "counting" things, such as number of empty bins. They are more useful in some applications than others.</li>
+                    <li>Linearity of expectation is a very powerful and robust tool that does not require independence. It is useful in almost every expectation calculation problem.</li>
+                    <li>Any (positive) power of an indicator r.v. is just the indicator itself because 0 and 1 to any power are just 0 and 1 themselves.</li>
+                    <li>The expectation of an indicator r.v. is the probability of the corresponding "indicated" event.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/19 Section 5D - Variance</h4>
+                <ul>
+                    <li>Breaking down into indicators is also useful for variance calculations. There is one common technique: (X<sub>1</sub> + ... + X<sub>n</sub>)<sup>2</sup> is the sum of the squares of each individual indicator X<sub>i</sub> plus the pairwise product of any two different indicators in different orders. That is, all terms X<sub>i</sub>X<sub>j</sub> and X<sub>j</sub>X<sub>i</sub> (you have to inlcude both).</li>
+                    <li>The next step is to use linearity of expectation and the properties of indicators.</li>
+                    <li>The product of two indicators is an indicator for the event that both events indicated by the indicators happen.</li>
+                    <li>In most indicator-based expectation and variance problems, the main source of difference comes from calculating the expectation of indicators and the expectation of the product of indicators.</li>
+                    <li>To move from a distribution of Y conditioned on X to an unconditioned distribution on Y, apply the law of total probability by summing over all possible values of X (see problem 3 for an example).</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/23 Section 6A - Covariance</h4>
+                <ul>
+                    <li>Independence implies uncorrelation but not necessarily the other way around.</li>
+                    <li>The basic idea behind random variables that are dependent but uncorrelated is that they could be related in a <i>nonlinear</i> way. The example given in class was that |X + Y| = 1, XY = 0, and for a fixed X, we have that Y could be one of two possible answers with equal probability.</li>
+                    <li>The variance of a random variable is the covariance of a random variable with itself.</li>
+                    <li>The tail sum formula, intuitively, comes from breaking a nonnegative random variable X down to indicators Y<sub>i</sub> for positive integers i corresponding to the event that X is at least i and then applying linearity of expectation.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/24 Section 6B - Conditional Expectation and Coupon Collector</h4>
+                <ul>
+                    <li>The geometric distribution is the <i>only</i> discrete distribution with the memoryless property.</li>
+                    <li>The expectation of a random variable is not a random variable, but the expectation of a random variable <i>conditioned</i> on another random variable is a random variable.</li>
+                    <li>General coupon collectors follow a similar pattern. Denote X<sub>i</sub> as the time to collect the i+1-th coupon starting with i already collected coupons and then take the sum of the X<sub>i</sub> from 0 to n-1, using linearity of expectation.</li>
+                    <li>The main separating factor for these problems comes from the actual distribution of each of the X<sub>i</sub>, which usually tend to be geometric.</li>
+                </ul>
+                <br>
                 <a class="bodylink" href="teaching.html">Back to teaching home page.</a>
                 <br>
             </div>
