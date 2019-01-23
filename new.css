@@ -11,6 +11,7 @@ div.name-block {
 div.main-navbar {
   background-color: #fff;
   height: 100%;
+  overflow: auto;
   position: static; }
 
 body {

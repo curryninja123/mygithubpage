@@ -16,6 +16,7 @@ div.name-block {
 div.main-navbar {
     background-color: $page-background;
     height: 100%;
+    overflow: auto;
     position: static;   
 }
 
