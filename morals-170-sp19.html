@@ -31,6 +31,24 @@
                     <li>If f(n) is &Theta(n<sup>k</sup>) then the sum from i=1 to i=n of f(i) is &Theta(n<sup>k+1</sup>).</li>
                 </ul>
                 <br>
+                <h4 class="sub-head">1/30 Section 2 - Divide and Conquer</h4>
+                <ul>
+                    <li>The Master Theorem can be viewed in context of divide and conquer problems. Thus it is great for analyzing their runtimes.</li>
+                    <li>We use roots of unity in the FFT to make taking square roots easier.</li>
+                    <li>We can only run the FFT algorithm on inputs whose size is some power of 2.</li>
+                    <li>Ideas to solve divide and conquer problems come from analyzing solutions to other divide and conquer problems. The more you have to go off of, the more ideas you can come up with.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">2/6 Section 3 - FFT and Graphs</h4>
+                <ul>
+                    <li>FFT makes polynomial multiplication easy because we can efficiently convert to and from the value representation, where it is much simpler to multiply polynomials.</li>
+                    <li>Polynomial multiplication is very robust because it can model a variety of processes. This is why FFT is such a useful algorithm.</li>
+                    <li>A vertex i is the ancestor of vertex j in a DFS tree if there is a directed path from i to j consisting of tree edges.</li>
+                    <li>A directed graph has a cycle if and only if there is a back edge in any DFS run.</li>
+                    <li>Graph decomposition is a cheap and useful process. It takes time linear in the sum of edges and vertices and makes the graph a lot easier to deal with.</li>
+                    <li>If vertex i is reachable from vertex j in G then j is reachable from i in the reverse graph.</li>
+                    <li></li>
+                </ul>
             </div>
             
         </div>
