@@ -48,8 +48,32 @@
                     <li>Graph decomposition is a cheap and useful process. It takes time linear in the sum of edges and vertices and makes the graph a lot easier to deal with.</li>
                     <li>If vertex i is reachable from vertex j in G then j is reachable from i in the reverse graph.</li>
                 </ul>
+                <br>
+                <h4 class="sub-head">2/13 Section 4 - Graphs I</h4>
+                <ul>
+                    <li>Assumptions about algorithms can be useful in proving properties of underlying structures. For example, properties of BFS and DFS can be useful in proving properties of graphs in general.</li>
+                    <li>Dijkstra's algorithm is equivalent to BFS when all edge weights are equal.</li>
+                </ul>
+                <h4 class="sub-head">2/20 Section 5 - Graphs II</h4>
+                <ul>
+                    <li>In order to prove counterexamples, it is important to understand the functionality of the algorithm. This will help you treat edge cases properly.</li>
+                    <li>Bellman-Ford runs |V|-1 iterations because any shortest path contains at most |V|-1 edges. If it has more, there is a loop somewhere, so either the cycle must have a nonpositive total weight. The algorithm detects this on the |V|th turn.</li>
+                </ul>
+                <h4 class="sub-head">2/27 Section 6 - Greedy Algorithms</h4>
+                <ul>
+                    <li>When solving HornSAT problems, the general HornSAT structure is important because solving general satisfiablity problems (that is, not in the format of HornSAT) is really hard.</li>
+                    <li>A Huffman tree of exactly n symbols has n-1 internal nodes.</li>
+                    <li>A Huffman code is the most compact prefix-free code representing a string given the frequencies of its symbols.</li>
+                </ul>
             </div>
-            
+            <h4 class="sub-head">3/6 Section 7 - Dynamic Programming</h4>
+                <ul>
+                    <li>The final subproblem should contain the values that you need to return in the end. Thus subproblems should be of similar types to the return value.</li>
+                    <li>There are three major steps to solving a DP problem: defining the subproblem, building the recurrence relation, and specifying the order in which you solve the subproblems. The third step is necessary for iterative solution but can be avoided in recursive solutions given that you memoize.</li>
+                    <li>Subproblem indices should contain all necessary information to solve a given DP problem.</li>
+                    <li>Many DP problems have similar format to other DP problems. Like divide-and-conquer algorithms, it is a good idea to build a repository of DP problems through practice.</li>
+                    <li>Sometimes it's useful to define the value of subproblems on trivial or unnatural examples, such as C(-1) = 0 for the copper pipes problem on discussion, or P(empty set) = 0 for a set building problem.</li>
+                </ul>
         </div>
     </body>
 </html>
