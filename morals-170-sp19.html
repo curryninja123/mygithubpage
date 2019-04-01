@@ -65,8 +65,7 @@
                     <li>A Huffman tree of exactly n symbols has n-1 internal nodes.</li>
                     <li>A Huffman code is the most compact prefix-free code representing a string given the frequencies of its symbols.</li>
                 </ul>
-            </div>
-            <h4 class="sub-head">3/6 Section 7 - Dynamic Programming</h4>
+                <h4 class="sub-head">3/6 Section 7 - Dynamic Programming</h4>
                 <ul>
                     <li>The final subproblem should contain the values that you need to return in the end. Thus subproblems should be of similar types to the return value.</li>
                     <li>There are three major steps to solving a DP problem: defining the subproblem, building the recurrence relation, and specifying the order in which you solve the subproblems. The third step is necessary for iterative solution but can be avoided in recursive solutions given that you memoize.</li>
@@ -74,6 +73,22 @@
                     <li>Many DP problems have similar format to other DP problems. Like divide-and-conquer algorithms, it is a good idea to build a repository of DP problems through practice.</li>
                     <li>Sometimes it's useful to define the value of subproblems on trivial or unnatural examples, such as C(-1) = 0 for the copper pipes problem on discussion, or P(empty set) = 0 for a set building problem.</li>
                 </ul>
+                <h4 class="sub-head">3/13 Section 8 - Linear Programming</h4>
+                <ul>
+                    <li>For Linear Programming, graphical intuition is a good place to start but algebraic intuition will get you further in solving exam problems.</li>
+                    <li>Reductions are a useful tool for solving problems that are similar to a given format, and it's worth understanding common methods, like slack variables.</li>
+                    <li>Like DP subproblems, LP variables should contain all necessary information to model the problem.</li>
+                    <li>There are 3 steps in solving an LP problem: defining the variables, defining the objective, and defining the constraints.</li>
+                    <li>Don't forget sensibility constraints, e.g. probability is between 0 and 1, times should be nonnegative, etc.</li>
+                </ul>
+            </div>
+            <h4 class="sub-head">3/20 Section 9 - LP Duality</h4>
+                <ul>
+                    <li>The dual is derived by trying to find the best upper bound on the primal. The dual variables correspond to primal coefficients.</li>
+                    <li>In linear programs, the optimal value of the dual d<sup>*</sup> is equal to the optimal value of the primal p<sup>*</sup>.</li>
+                    <li>The max flow is equal to the min cut. This is a good way to check your answers to both problems.</li>
+                </ul>
+            
         </div>
     </body>
 </html>
