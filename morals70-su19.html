@@ -56,9 +56,71 @@
                     <li>There are four equivalent definitions of trees (you should understand how they are related, in particular, prove that they are equivalent). Some are more useful than others in proving certain properties of trees, so it's important to choose the right one in your proof. </li>
                 </ul>
                 <br>
+                <h4 class="sub-head">6/25 Section 2A - Graph Planarity and Coloring</h4>
+                <ul>
+                    <li>The number of edges in a planar graph grow linearly with the number of vertices. That is, e = O(v).</li>
+                    <li>For proofs about planarity, try to see if you can prove the statement directly with the 3v-6 edge upper bound before relying on techniques such as induction.</li>
+                    <li>A graph is nonplanar if and only if it contains K<sub>5</sub> or K<sub>3,3</sub>. This theorem is very useful in proving whether or not a graph is planar.</li>
+                    <li>If a graph can be colored with k colors, it can be colored with k+1 colors. Thus k-coloring is a stronger statement than k+1-coloring</li>
+                    <li>For proofs about coloring, induction might be worth a try. The idea is you ignore a vertex, inductive color the subgraph, add the vertex back, and pick a color for it.</li>
+                    <li>Bipartite graphs can be defined as graphs that can be 2-colored (think of the left partition as one color and the right as another).</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">6/26 Section 2B - Modular Arithmetic</h4>
+                <ul>
+                    <li>Systems of equations in mod work the same way as they do in the reals - you can add and subtract multiples of equations to each other.</li>
+                    <li>The most general way to solve ax congruent to b mod m where a and m are relatively prime is to multiply both sides by the multiplicative inverse of a. This is the best way to get rid of an a on any side of a modular equation.</li>
+                    <li>Modular arithmetic can simplify computations. For example, sums and products of numbers can be replaced by corresponding sums and products using the remainders of the numbers. The base of the exponential can also be replaced in this way. Do not try doing this to the exponent, however.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">6/27 Section 2C - EGCD and Chinese Remainder Theorem</h4>
+                <ul>
+                    <li>There are multiple ways to perform the Extended Euclid GCD algorithm. The tabular way (see Piazza) is efficient, but in order to develop intuition, it's best to try the method on the discussion worksheet as well.</li>
+                    <li>Intuitively, you can think of the GCD algorithm as folding a paper with integer lengths along a corner diagonal and then cutting out the resulting square until nothing is left - the last square is the GCD of the two numbers (see discussion 2C).</li>
+                    <li>The Chinese Remainder Theorem interpolation problem can be thought of as constructing numbers which "raise" a particular modulo by 1 and keep the others at 0. If you are familiar with linear algebra, this is like creating basis vectors and then taking a linear combination of them to reconstruct the solution.</li>
+                    <li>While CRT (and for that matter most modular arithmetic) problems tend to be hard to compuate but are straightforward to verify. Make sure you do this when going through an exam! </li>
+                </ul>
+                <br>
+                <h4 class="sub-head">6/28 Section 3A - RSA</h4>
+                <ul>
+                    <li>In order to get rid of a term x on one side of a modular equation, multiply both sides by the inverse of x (assuming this is allowed). Conversely, to get rid of the inverse of x, multiply both sides by x. Intuitively, this works the same way as it does in the real numbers.</li>
+                    <li>Knowing the private keys in RSA is essentially equivalent to being able to factor the numbers.</li>
+                    <li>The Chinese Remainder Theorem states that any system of k congruences of the form x is congruent to a<sub>i</sub> mod m<sub>i</sub> for relatively prime m<sub>i</sub> has a unique solution mod m<sub>1</sub>...m<sub>k</sub> (the product of the moduli). This is useful when solving for the value of a number od a product of primes - break it down into a smaller system of congruences and reconstruct the solution using the Chinese Remainder Theorem method shown earlier.</li>
+                    <li>Most proofs for the RSA algorithm essentially follow the same format, but certain parts are different based on the variety in the scheme. For example, in the three-prime RSA scheme, we made the same argument as in the two-prime case, defining our value of N and private key modulo as natural extensions (see discussion 2d). It is worth understanding the purpose of each step and why we make it in order to extend this proof to different schemes.</li>
+                    <li>Factoring is assumed to be computaionally hard. It turns out this implies that getting (p-1)(q-1) from pq (and thus cracking RSA) is computaionally hard.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/2 Section 3B - Polynomials</h4>
+                <ul>
+                    <li>The Galois Field (GF) basically means you are considering the polynomial mod p for some prime p. As we will see later, it matters that p is prime for some important properties to hold. This means that the coefficients are reduced mod p. 7x will go to 2x mod 5.</li>
+                    <li>d+1 points uniquely specify a polynomial of degree at most d. That is, if two polynomials of degree at most d pass through those d+1 points, they must be the same everywhere else.</li>
+                    <li>For a nonzero polynomial, the number of zeros is at most the degree of the polynomial.</li>
+                    <li>A polynomial of degree greater than or equal to p cannot exist in GF(p). This makes sense intuitively because there are at most p possible points that the polynomial can go through, and that specifies a polynomial of degree p-1. Mathematically, you can use FLT (try this out on your own) to reduce the degree of a polynomial in GF(p).</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/3 Section 3C - Secret Sharing and Error-Correcting</h4>
+                <ul>
+                    <li>Secret sharing and error correcting are two different motivations utilizing a similar concept - you can use some points to encode a polynomial and use that polynomial to generate more similar information. In the former case, you split up that information whereas in the latter case you send extra information to make up for lost or corrupted information.</li>
+                    <li>For erased information, you add an extra amount of information equal to the number of packets lost.</li>
+                    <li>The intuition for corrupted packets is not as strong. However, you can think of it as follows: n packets contain the original message, k end up getting corrupted, and k more are sent so that the receiver can figure out which packets were corrupted. Thus n+2k packets are sent.</li>
+                    <li>r<sub>i</sub> is the <i>receieved</i> information not the <i>sent</i> information</li>.
+                    <li>The key observation in Berlekamp-Welch is that Q(i) = P(i)E(i) = r<sub>i</sub> E(i)in the case where there is an error (because both sides are 0) and in the case where there isn't an error (because the received message r<sub>i</sub> is the same as the sent message P(i)</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/5 Section 3D - Countability</h4>
+                <ul>
+                    <li>If a set A "seems" smaller than another countable set B (for example, there is an injection from A to B) then A is also countable.</li>
+                    <li>Likewise, if a set A "seems" larger than another uncountable set B, then A is also uncountable.</li>
+                    <li>Diagonalization proofs all follow a similar argument. You assume countability for the sake of contradiction and suppose the existence of some special element x created by changing some aspects of other elements on the list with the idea that x will appear at the n-th position but the n-th position of x's representation will result in a contradiction.</li>
+                    <li>Cartesian Product of countable sets is countable.</li>
+                    <li>If A is smaller than B and A is uncountable, then B is uncountable. Likewise, if A is smaller than B and B is countable, then A is countable.</li>
+                    <li>If A and B are infinite sets with a bijection between them, then they are both either countable or uncountable. That is, they share the same cardinality.</li>
+                    <li>If there is a injection from A to B then B's cardinality is at least as large as A's cardinality. Similarly, if there is a surjection from A to B then A's cardinality is at least as large as B's cardinality.</li>
+                </ul>
+                <br>
             </div>
             <div class="pure-u-1-5"></div>
         </div>
         <br><br>
     </body>
-</html>
+</html
