@@ -53,7 +53,7 @@
                     <li>Properties of trees are useful in proofs about cycles</li>
                     <li>Whenever possible, try to prove statements about graphs directly using principles like the Handshake Lemma. These tend to be much more simple than inductive proofs. However, not all statements can be proved in this way.</li>
                     <li>Induction on graphs follows a notable pattern: for the inductive step, remove a feature you are inducting over (almost always a vertex or edge) from the graph, apply the inductive hypothesis, add it back, and then prove the statement.</li>
-                    <li>There are four equivalent definitions of trees (you should understand how they are related, in particular, prove that they are equivalent). Some are more useful than others in proving certain properties of trees, so it's important to choose the right one in your proof. </li>
+                    <li>There are four equi valent definitions of trees (you should understand how they are related, in particular, prove that they are equivalent). Some are more useful than others in proving certain properties of trees, so it's important to choose the right one in your proof. </li>
                 </ul>
                 <br>
                 <h4 class="sub-head">7/1 Section 2A - Graph Planarity and Coloring</h4>
@@ -116,6 +116,55 @@
                     <li>If A is smaller than B and A is uncountable, then B is uncountable. Likewise, if A is smaller than B and B is countable, then A is countable.</li>
                     <li>If A and B are infinite sets with a bijection between them, then they are both either countable or uncountable. That is, they share the same cardinality.</li>
                     <li>If there is a injection from A to B then B's cardinality is at least as large as A's cardinality. Similarly, if there is a surjection from A to B then A's cardinality is at least as large as B's cardinality.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/15 Section 4A - Computability</h4>
+                <ul>
+                    <li>Computability problems follow a similar form - reduce a problem <i>from</i> (not to) the halting problem or another uncomputable problem like TestHelloWorld to show that it is uncomputable.</li>
+                    <li>In reductions, use the program you are assuming does not exist as the black box, <b>not the other way around</b>.</li>
+                    <li>Computer programs are strings and are therefore countable. Functions are, in general, uncountable</li>
+                    <li>A bounded space or time halting problem is decideable.</li>
+                    <li>Questions that otherwise ask details about the execution of a program are undecideable</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/16 Section 4B - Counting I</h4>
+                <ul>
+                    <li>There are multiple ways to count things. As long as your intuition has been shown to be correct, do whatever you're most comfortable with!</li>
+                    <li>Bitstrings of length n can be thought of as analogous to subsets from a set of size n. We can derive the combinatorial symbol in this way. Furthermore, since there are two choices for each element to create a subset (either the element is in the subset or not), the number of total subsets is 2<sup>n</sup>.</li>
+                    <li>Stars and Bars is essentially an anagram problem using a letter for each object and divider.</li>
+                    <li>Keep a running list of how to count in different situations and always relate new problems to ones you've solved before.</li>
+                    <li>n choose k is the same as n choose n - k. Instead of choosing the n elements in a subset, we can exclude n - k and use the remaining k.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/17 Section 4C - Counting II</h4>
+                <ul>
+                    <li>Keep a running list of how to count in different situations and always relate new problems to ones you've solved before. This is especially useful for combinatorial proofs.</li>
+                    <li>If you're confused about how to start, try small examples. Then, take these examples and generalize.</li>
+                    <li>A common counting technique is to overcount, and then divide out by the number of symmetries. In other words, count some objects assuming an ordering that is not there in the problem and divide by the number of orderings that produce the same object.</li>
+                    <li>Similarly, you can count objects by counting a superset of them and counting the objects that you exclude. This is similar to taking the complement in probability.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/18 Section 4D - Discrete Probability</h4>
+                <ul>
+                    <li>For uniform probability, you can count the number of successful events and divide it by the number of total events (size of sample space).</li>
+                    <li>Inclusion-Exclusion makes sense when you think of drawing Venn Diagrams. See <a href="https://en.wikipedia.org/wiki/Inclusion–exclusion_principle#/media/File:Inclusion-exclusion-3sets.png">this picture</a> for such an example.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/22 Section 5A - Conditional Probability</h4>
+                <ul>
+                    <li>Conditional probability can be thought of as "reducing the sample space"</li>
+                    <li>Bayes' rule can be derived using the definition of conditional probability.</li>
+                    <li>Bayes' rule is extremely useful for flipping conditionals.</li>
+                    <li>We can think of symmetry like this - if we <i>don't know</i> the result of the first trial and want to consider the second trial, it is effectively the same as performing both trials simultaneously and arbitrarily deeming one the first and the other the second.</li>
+                    <li>When calculating the probability breaks down into cases, the total probability rule is the way to go.</li>
+                    <li>If you're confused about how to reason about the probability of an event or a sample space, thinking about the event as an experiment can build intuition.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/23 Section 5B - Independence</h4>
+                <ul>
+                    <li>The definitions of independence are all equal and can be derived using the definition of conditional probability.</li>
+                    <li>Mutual independence is stronger than pairwise independence (or k-wise independence for any k).</li>
+                    <li>(k+1)-wise independence is stronger than k-wise independence for any k.</li>
                 </ul>
                 <br>
             </div>
