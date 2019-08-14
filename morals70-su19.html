@@ -167,6 +167,83 @@
                     <li>(k+1)-wise independence is stronger than k-wise independence for any k.</li>
                 </ul>
                 <br>
+                <h4 class="sub-head">7/24 Section 5C - Distributions</h4>
+                <ul>
+                    <li>If given a number of independent of trials and probability of any individual trial succeeding, it is binomial.</li>
+                    <li>If counting the number of trials before a success, it is geometric.</li>
+                    <li>Be careful how you define "success" for a particular problem.</li>
+                    <li>If an event A implies the occurence of an event B and vice versa, then both events are equal (think of events like sets and then consider set equality conditions in terms of subsets).</li>
+                    <li>If given a mean number of successes over a period of time, it is Poisson.</li>
+                    <li>The sum of Poissons is Poisson in an intuitive way - the parameters add.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/25 Section 5D - Random Variables and Expectation</h4>
+                <ul>
+                    <li>Expectation is essentially a weighted average.</li>
+                    <li>Indicator random variables are useful for "counting" things, such as number of empty bins. They are more useful in some applications than others.</li>
+                    <li>Linearity of expectation is a very powerful and robust tool that does not require independence. It is useful in almost every expectation calculation problem.</li>
+                    <li>Any (positive) power of an indicator r.v. is just the indicator itself because 0 and 1 to any power are just 0 and 1 themselves.</li>
+                    <li>The expectation of an indicator r.v. is the probability of the corresponding "indicated" event.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/30 Section 6B - Variance</h4>
+                <ul>
+                    <li>The decomposition of a variable into the sum of indicator variables is useful in problems where you're "counting" something.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">7/31 Section 6C - Covariance</h4>
+                <ul>
+                    <li>Independence implies uncorrelation but not necessarily the other way around.</li>
+                    <li>The basic idea behind random variables that are dependent but uncorrelated is that they could be related in a <i>nonlinear</i> way. The example given in class was that |X + Y| = 1, XY = 0, and for a fixed X, we have that Y could be one of two possible answers with equal probability.</li>
+                    <li>The variance of a random variable is the covariance of a random variable with itself.</li>
+                    <li>The tail sum formula, intuitively, comes from breaking a nonnegative random variable X down to indicators Y<sub>i</sub> for positive integers i corresponding to the event that X is at least i and then applying linearity of expectation.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">8/1 Section 6D - Markov and Chebyshev's Inequalities</h4>
+                <ul>
+                    <li>To apply Chebyshev's inequality, one has to make the event symmetric about a center. For example, if a random variable X has mean 2, the event X > 6 can be upper bounded by the event X > 6 or  -2 > X and then Chebyshev's inequality can be applied. </li>
+                    <li>In general (but not always), Chebyshev's inequality gives a tighter bound than Markov's inequality and does not require the random variable to be positively valued.</li>
+                    <li>If the number of samples goes up, the variance of the average of the samples tends to go down. This is useful in constructing confidence intervals.</li>
+                    <li>Confidence intervals have a few main properties: center, width (also called error), variance, and confidence. Most problems involve manipulating a few of these variables to figure out the others and the manipulations almost always involve Chebyshev's inequality or a similar form.</li>
+                    <li>If figuring out the fewest number of samples needed to attain a certain confidence, one should round up to the nearest integer (think about why).</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">8/5 Section 7A - Continuous Probability I</h4>
+                No morals today, but here are the 5 steps to solve most continuous probability problems.
+                <ol>
+                    <li>Draw the feasible region. That is, over the plane of your random variables, sketch the region of possible values for the variables.</li>
+                    <li>Draw your constraints. That is, shade in the part of the feasible region that you'd want to consider. For example, if Y > X, shade in the region above the line Y = X.</li>
+                    <li>Consider splitting into cases. This is useful for absolute values. When integrating |Y - X| in an expectation, you could split into a region where |Y - X| = Y - X and one where it equals X - Y. These two functions are easier to integrate over.</li>
+                    <li>Calculate the pdfs of the random variables. Sometimes it might be easier to calculate the cdf (or the complement of the cdf) and then take the derivative.</li>
+                    <li>Choose an order of integration (see my calculus notes on Piazza) and integrate the pdfs over the region.</li>
+                </ol>
+                <br>
+                <h4 class="sub-head">8/6 Section 7B - Continuous Probability II</h4>
+                <ul>
+
+                    <li>To calculate the pdf of a derived random variable (that is, a function of some random variable whose distributions you know) first calculate the cdf and then take the derivative </li>
+                    <li>The marginal distribution just means the distribution of a given variable (derived from the joint distribution by summing/integrating over the other variables).</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">8/7 Section 7C - Markov Chains I</h4>
+                No morals today, but quite a few tomorrow! Mostly just vocabulary and terminology for this section, so I'd recommend looking at the notes.
+                <br>
+                <h4 class="sub-head">8/8 Section 7D - Markov Chains II</h4>
+                <ul>
+                    <li>Irreducibility means that between any two nodes a and b, there is a directed path from a to b and from b to a.</li>
+                    <li>Aperiodicity requires all nodes to have d(i) = 1. That is, there must be at least walks to get from a node back to itself whose lengths are coprime. One simply has to demonstrate two such paths to prove the aperiodicity of a node.</li>
+                    <li>If a Markov chain is irreducible and one node has d(i) = 1, then all nodes have d(i) = 1</li>
+                    <li>You can think of hitting times as a conditional/total expectation problem - what's the expected time to reach a destination if I take this as my next step? It's 1 plus the expected time from the next node to the destination.</li>
+                </ul>
+                <br>
+                <h4 class="sub-head">8/2 Section 7D - Markov Chains III</h4>
+                <ul>
+                    <li>The invariant and stationary distributions are the same thing.</li>
+                    <li>In addition to the equation πP = π, you need to add the constraint that the sum of the π(i) = 1 in order to solve for the invariant distribution.</li>
+                    <li>Every Markov chain has at least one invariant distribution. If the Markov chain is irreducible, the invariant distribution is unique. If, furthermore, the Markov chain is aperiodic (as well as irreducible) every initial distribution <i>converges</i> to the invariant distribution (don't worry about the exact idea here, just know it gets closer and closer to the invariant).</li>
+                    <li>The invariant distribution is the distribution of the long-term fraction of the time that the chain is in a given state.</li>
+                </ul>
+                <br>
             </div>
             <div class="pure-u-1-5"></div>
         </div>
